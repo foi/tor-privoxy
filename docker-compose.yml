@@ -1,6 +1,6 @@
 tor-privoxy:
   restart: always
-  image: dockage/tor-privoxy:latest
+  image: foifirst/tor-privoxy-for-telegram:latest
   ports:
     - "9050:9050" # Tor proxy
     - "9051:9051" # Tor control port
