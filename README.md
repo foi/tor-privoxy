@@ -1,6 +1,6 @@
-# tor-privoxy [![Docker Pulls](https://img.shields.io/docker/pulls/dockage/tor-privoxy.svg)](https://hub.docker.com/r/dockage/tor-privoxy/) [![Docker Stars](https://img.shields.io/docker/stars/dockage/tor-privoxy.svg?style=flat)](https://hub.docker.com/r/dockage/tor-privoxy/) [![MicroBadger](https://images.microbadger.com/badges/image/dockage/tor-privoxy.svg)](https://microbadger.com/images/dockage/tor-privoxy) [![Docker Build Status](https://img.shields.io/docker/build/dockage/tor-privoxy.svg)](https://hub.docker.com/r/dockage/tor-privoxy/) [![Docker Automated build](https://img.shields.io/docker/automated/dockage/tor-privoxy.svg)](https://hub.docker.com/r/dockage/tor-privoxy/)
+# tor-privoxy [![Docker Pulls](https://img.shields.io/docker/pulls/foifirst/tor-privoxy-for-telegram.svg)](https://hub.docker.com/r/foifirst/tor-privoxy-for-telegram/) [![Docker Stars](https://img.shields.io/docker/stars/foifirst/tor-privoxy-for-telegram.svg?style=flat)](https://hub.docker.com/r/foifirst/tor-privoxy-for-telegram/) [![MicroBadger](https://images.microbadger.com/badges/image/foifirst/tor-privoxy-for-telegram.svg)](https://microbadger.com/images/foifirst/tor-privoxy-for-telegram) [![Docker Build Status](https://img.shields.io/docker/build/foifirst/tor-privoxy-for-telegram.svg)](https://hub.docker.com/r/foifirst/tor-privoxy-for-telegram/) [![Docker Automated build](https://img.shields.io/docker/automated/foifirst/tor-privoxy-for-telegram.svg)](https://hub.docker.com/r/foifirst/tor-privoxy-for-telegram/)
 
-This image combines Tor and Privoxy services to prepare proxy connection for http and shell.
+This image combines Tor and Privoxy services to prepare proxy connection for http and shell (for Telegram).
 
 
 ## Contributing
@@ -26,16 +26,16 @@ If the above recommendations do not help then [report your issue](../../issues/n
 
 ## Installation
 
-Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/dockage/tor-privoxy) and is the recommended method of installation.
+Automated builds of the image are available on [Dockerhub](https://hub.docker.com/r/foifirst/tor-privoxy-for-telegram) and is the recommended method of installation.
 
 ```bash
-docker pull dockage/tor-privoxy
+docker pull foifirst/tor-privoxy-for-telegram
 ```
 
 Alternatively you can build the image yourself.
 
 ```bash
-docker build -t dockage/tor-privoxy github.com/dockage/tor-privoxy
+docker build -t foifirst/tor-privoxy-for-telegram github.com/foifirst/tor-privoxy-for-telegram
 ```
 
 
@@ -44,7 +44,7 @@ docker build -t dockage/tor-privoxy github.com/dockage/tor-privoxy
 The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/).
 
 ```bash
-wget https://raw.githubusercontent.com/dockage/tor-privoxy/master/docker-compose.yml
+wget https://raw.githubusercontent.com/foifirst/tor-privoxy-for-telegram/master/docker-compose.yml
 docker-compose up
 ```
 
@@ -55,7 +55,7 @@ docker run --name='tor-privoxy' -d \
   -p 9050:9050 \
   -p 9051:9051 \
   -p 8118:8118 \
-dockage/tor-privoxy:latest
+foifirst/tor-privoxy-for-telegram:latest
 ```
 
 # Maintenance
@@ -66,7 +66,7 @@ To upgrade to newer releases:
 
 - **Step 1**: Download the updated Docker image:
 ```bash
-docker pull dockage/tor-privoxy
+docker pull foifirst/tor-privoxy-for-telegram
 ```
 
 - **Step 2**: Stop the currently running image:
@@ -83,7 +83,7 @@ docker rm -v tor-privoxy
 ```bash
 docker run --name tor-privoxy -d \
 [OPTIONS] \
-dockage/tor-privoxy:latest
+foifirst/tor-privoxy-for-telegram:latest
 ```
 
 ## Shell Access
