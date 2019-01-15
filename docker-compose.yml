@@ -1,4 +1,4 @@
-tor-privoxy:
+tor-privoxy-for-telegram:
   restart: always
   image: foifirst/tor-privoxy-for-telegram:latest
   ports:
