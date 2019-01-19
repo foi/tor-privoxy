@@ -44,7 +44,7 @@ docker build -t foifirst/tor-privoxy-for-telegram github.com/foifirst/tor-privox
 The quickest way to get started is using [docker-compose](https://docs.docker.com/compose/).
 
 ```bash
-wget https://raw.githubusercontent.com/foifirst/tor-privoxy-for-telegram/master/docker-compose.yml
+wget https://raw.githubusercontent.com/foi/tor-privoxy/master/docker-compose.yml
 docker-compose up
 ```
 
